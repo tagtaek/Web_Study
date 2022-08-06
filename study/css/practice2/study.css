@@ -1,0 +1,21 @@
+/* 전체선택자*/
+*{
+    color: blue;
+}
+
+
+/* 태그 선택자*/
+p{
+    color: blue;
+}
+
+
+/* class 선택자 */
+.text{
+    color: blue;
+}
+
+/* 아이디 선택자*/
+#topic{
+    color: blue;
+}
