@@ -19,3 +19,8 @@ p{
 #topic{
     color: blue;
 }
+
+/* 그룹 선택자 */
+h1, p, div{
+    color: blue;
+}
