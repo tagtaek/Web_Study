@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>html 문서</title>
+        <style>
+            div{
+                box-sizing: border-box;
+                width: 500px; height:500px;
+                border: 1px solid red;
+                background-color: yellow;
+                background-image:url(./고냥이.jpeg);
+
+                /* 이미지가 반복된다 -> repeat속성의 기본 값인 repeat을 
+                no-repeat으로 바꿔준다.*/
+                background-repeat: no-repeat;
+
+                background-position: center;
+
+                /* size의 종류 
+                1. 500px 500px 로 너비와 높이를 정해줄 수 있다.
+                2. cover 라는 키워드로 이미지로 꽉차게 할 수 있다.
+                (비율이 깨지지 않는 선)
+                3. contain 이라는 키워드로 이미지가 찌그러지거나 
+                잘리지 않는 한도로 최대사이즈로 할 수 있다. */
+                background-size: cover;
+
+                /* 단축속성으로서의 특징 사용자는, background에 대한 정확한 속성명만 
+                입력하면 자유롭게 정의할 수 있다.*/
+                background: no-repeat url(고냥이.jpeg) blue;
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>hello~</div>
+    </body>
+</html>
