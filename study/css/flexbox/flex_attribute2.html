@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>html 문서</title>
+        <style>
+            .container{
+                display: flex;
+                width: 300px; height: 300px;
+                border: 2px solid green;
+                /* flex-wrap은 개별 요소들의 크기 합이 주축길이보다 길 때 처리하는 방법
+                flex-wrap: nowrap; 기본상태
+                flex-wrap: wrap-reverse; 거꾸로, 왼쪽 아래부터 1,2,3 */
+                flex-wrap: wrap;
+                
+                }
+            .item{/*만약 width가 120씩 3개라면, 
+            컨테이너박스에 맞게 각100px로 줄어든다*/
+                width: 120px; height: 60px;
+                background-color: blue;
+            }
+            .self{
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item self">2</div>
+            <div class="item">3</div>
+
+        </div>
+    </body>
+</html>

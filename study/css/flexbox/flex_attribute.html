@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>html 문서</title>
+        <style>
+            .container{
+                display: flex;
+                width: 300px; height: 300px;
+                border: 2px solid green;
+                /* justify-content 는 주축에서 모든요소의 배치방법을 결정한다.
+                justify-content : center; 주축의 가운데
+                justify-content : flex-start; 왼쪽 시작부분에 쏠리게
+                justify-content : flex-end; 오른쪽 끝에 쏠리게
+                justify-content : space-around; 주축에서 요소들 간의 여백을 동일하게
+                justify-content : space-between; 양끝을 붙이고 나머지 요소들간 
+                공간을 동일하게*/
+                justify-content : space-between;
+                align-items: flex-end;
+            }
+            .item{
+                width: 60px; height: 60px;
+                background-color: blue
+            }
+            .self{/*개별 요소의 배치방법을 결정한다*/
+                align-self: flex-start;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item self">2</div>
+            <div class="item">3</div>
+
+        </div>
+    </body>
+</html>
