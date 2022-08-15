@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>특성 선택자</title>
+        <style>
+            [class]{ /* class라는 게 있기만 하면 적용한다.*/
+                background-color: blue;
+            }
+            [class="item"]{/* class가 있으며, 그 값이 item이면 적용한다.*/
+                background-color: blue
+            }
+            /* 몇가지 기호로 속성값 일부만으로도 요소를 선택하는 방법*/
+            [class *="it"]{color: yellow;}/* it이 포함되면 선택하겠다.*/
+            [class ^="it"]{color: yellow;}/* it으로 시작되면 선택하겠다.*/
+            [class $="it"]{color: yellow;}/* it으로 끝나면 선택하겠다.*/
+        </style>
+    </head>
+    <body>
+        
+    </body>
+</html>
