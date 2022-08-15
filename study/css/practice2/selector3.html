@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>결합 선택자</title>
+        <style>
+                          /* 자손 결합자 */
+            div p{color: pink;}
+            /* div 안에 있는 모든 p요소를 선택한다.*/
+
+            div > p{color: pink;}
+            /* div "바로 아래에 위치한" 모든 p요소를 선택한다.*/
+
+                          /* 형제 결함자 */
+            h1 ~ p{color: blue;}
+            /* h1 요소의 뒤에 오는 형제 중 모든 p요소를 선택한다.*/
+
+            h1 + p{color: blue;}
+            /* h1 요소의 "바로 뒤에 오는" 형제 p요소를 선택한다.*/
+        </style>
+    </head>
+    <body>
+        <div>apple</div>
+        <div>
+            crazy
+            <span>banana</span>
+        </div>
+        <span>dress</span>
+        <p>egg</p>
+        <p>fire</p>
+    </body>
+</html>
