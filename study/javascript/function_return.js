@@ -12,4 +12,4 @@ function have(){
 const result2 = have();
 console.log(result2); // 97
 
-// return은 하나의 데이터만 반환하며, 함수를 종료시키는 기능을 한다.
+// return은 하나의 데이터만 반환하며, 함수를 종료시키는 역할도 한다.
